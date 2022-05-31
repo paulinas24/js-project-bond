@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='styles/global.css'>
+    <link rel='stylesheet' href='styles/login.css'>
+</head>
+<body>
+<section class='login_screen'>
+    <!-- do video powinno być zawsze dodane loop autoplay i muted - bez muted nie odtworzy się video -->
+    <video loop autoplay muted class="background_video" src="./asssets/backVideo.mp4"> </video>
+    <div class="login_container">
+        <!-- logo -->
+        <img src="./asssets/logo1 (1).png" class="logo">
+        <h1 class="login_title">JAMES BOND's APP</h1>
+        <!-- div z input - agent id -->
+        <div class="input_container">
+            <label>AGENT ID</label>
+            <input id="login_input" value="007"/>
+        </div>
+        <!-- div z input password -->
+        <div class="input_container">
+            <label>PASSWORD</label>
+            <input type="password" id="password_input"/>
+        </div>
+        <!-- button z klasą uniwersalną dla wszystkich -->
+        <button class="btn" id="login_button"> LOG IN </button>
+        <p id="login_error" class="not_visible">LOGIN ERROR</p>
+        <p class="login_text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque quo libero quibusdam aut, consectetur, quasi dicta cupiditate numquam adipisci sint! Quam, iste consequatur. Voluptas saepe nihil optio alias nulla!
+    </p>
+    </div>
+</section>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
